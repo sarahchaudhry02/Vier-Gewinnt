@@ -13,3 +13,36 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Gradle
+.gradle/
+build/
+
+# Local configuration
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+
+# Mac
+.DS_Store
+
+# Kotlin
+.kotlin/
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# Keystore
+*.jks
+*.keystore
+
+# Build outputs
+app/release/
+app/debug/
