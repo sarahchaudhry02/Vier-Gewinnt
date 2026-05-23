@@ -1,7 +1,7 @@
 package com.example.viergewinnt.bluetooth
 
 
-interface BluetoothConnection {
+interface BluetoothService {
 
     fun startConnection()
 

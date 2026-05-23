@@ -5,7 +5,7 @@ import com.example.viergewinnt.model.GameState
 import com.example.viergewinnt.model.Move
 import com.example.viergewinnt.model.player.Player
 
-interface GameController {
+interface GameServices {
 
     fun startGame()
 
