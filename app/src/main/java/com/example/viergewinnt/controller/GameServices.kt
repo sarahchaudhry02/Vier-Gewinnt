@@ -3,28 +3,51 @@ package com.example.viergewinnt.controller
 import com.example.viergewinnt.model.Board
 import com.example.viergewinnt.model.GameState
 import com.example.viergewinnt.model.Move
-import com.example.viergewinnt.model.player.Player
+import com.example.viergewinnt.model.Player
 
 interface GameServices {
 
-    fun startGame()
+    // Spielsteuerung
 
-    fun makeMove(column: Int) : Move?
+    fun startGame() : Boolean
 
-    fun switchPlayer()
+    fun makeMove(column: Int): Board?
 
-    fun resetGame()
+    fun cancelGame()
+
+    fun playAgain()
+
+
+    // Bluetooth
+
+    fun startBluetoothConnection()
+
+    fun connectWithBluetooth()
+
+    fun disconnectBluetooth()
+
+
+    // Daten für UI
+
+    fun getBoard(): Board
 
     fun getCurrentPlayer(): Player
 
     fun getGameState(): GameState
 
-    fun getBoard(): Board
+    fun getWinner(): Player?
 
-    fun isGameOver(): Boolean
+    fun isBlueConnected (): Boolean
 
-    fun sendMoveBluetooth()
+    fun isMyTurn(): Boolean
 
-    fun receiveMoveBluetooth()
+
+    // Eingehende Bluetooth-Daten
+
+    fun receiveMove(move: Move)
+
+
+
+
 
 }
