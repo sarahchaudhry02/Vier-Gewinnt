@@ -32,7 +32,7 @@ Für die UI sind Compose UI Tests geplant. Dabei wird getestet, ob zentrale Elem
 Die Bluetooth-Komponente wird nicht direkt mit echter Hardware automatisiert getestet. Da für die Entwicklung keine zwei Android-Geräte zur Verfügung standen, wurden für die Tests Mock-Objekte verwendet.
 Dadurch kann überprüft werden, ob die Bluetooth-Komponente korrekt auf Verbindungsaufbau, gesendete Spielzüge, empfangene Spielzüge sowie ungültige Nachrichten reagiert.
 Zusätzlich wurde ein FakeBluetoothHandler implementiert, um den Spielverlauf ohne echte Bluetooth-Verbindung testen zu können. Dieser simuliert einen zweiten Spieler und ermöglicht es, Spielzüge und Zustandsänderungen innerhalb der App zu überprüfen.
-<img src="screenshots/BlutwoothKomponente.png" width="700" alt="Tests der Bluetooth-Komponente">
+<img src="screenshots/BluetoothKomponente.png" width="700" alt="Tests der Bluetooth-Komponente">
 
 ### Integrationtests
 Der gesamte Spielablauf wird zusätzlich mit Integrationstests geprüft, z. B. Spiel starten,
