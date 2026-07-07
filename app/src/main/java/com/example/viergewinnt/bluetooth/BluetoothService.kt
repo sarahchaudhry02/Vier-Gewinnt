@@ -1,7 +1,7 @@
 package com.example.viergewinnt.bluetooth
 
+interface BluetoothService {
 
-interface BluetoothConnection {
 
     fun startConnection()
 
@@ -9,14 +9,12 @@ interface BluetoothConnection {
 
     fun disconnect()
 
-    fun sendInformation()
+    fun sendInformation(column: Int)
 
-    fun receiveInformation()
+    fun receiveInformation(): Int?
 
     fun isConnected(): Boolean
 
-
-
-
+    fun setOnMoveReceived(listener: (Int) -> Unit)
 
 }
