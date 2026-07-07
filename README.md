@@ -1,0 +1,1 @@
+Hinweis: Dieses Projekt befindet sich noch in Entwicklung. Die Anwendung ist grundsätzlich funktionsfähig, der Code wird jedoch weiterhin überarbeitet, optimiert und dokumentiert. Daher können sich Struktur, Implementierung und einzelne Funktionen noch ändern.
