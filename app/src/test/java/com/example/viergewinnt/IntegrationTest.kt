@@ -11,7 +11,7 @@ import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertNull
 
-class GameControllerIntegrationTest {
+class IntegrationTest {
 
     @Test
     fun startGame_newGame_setsGameStateToRunning() {
